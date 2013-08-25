@@ -5,7 +5,7 @@ require 'extconf_task/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "extconf-task"
-  spec.version       = ExtconfTask::VERSION
+  spec.version       = ExtconfTaskVersion::VERSION
   spec.authors       = ["Takayuki YAMAGUCHI"]
   spec.email         = ["d@ytak.info"]
   spec.description   = "Tiny rake tasks to manage extconf.rb"

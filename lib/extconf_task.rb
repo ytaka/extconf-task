@@ -15,6 +15,8 @@ require "extconf_task/version"
 #   et.extconf_paths << "path2/extconf.rb"
 # end
 class ExtconfTask < Rake::TaskLib
+  VERSION = ExtconfTaskVersion::VERSION
+
   attr_accessor :extconf_pattern
   attr_reader :extconf_paths
   attr_accessor :command_ruby
