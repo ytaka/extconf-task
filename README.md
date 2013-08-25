@@ -1,4 +1,4 @@
-# Extconf::Tasks
+# Extconf::Task
 
 TODO: Write a gem description
 
@@ -6,7 +6,7 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'extconf-tasks'
+    gem 'extconf-task'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install extconf-tasks
+    $ gem install extconf-task
 
 ## Usage
 

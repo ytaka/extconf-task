@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'extconf/tasks/version'
+require 'extconf_task/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "extconf-tasks"
-  spec.version       = Extconf::Tasks::VERSION
+  spec.name          = "extconf-task"
+  spec.version       = ExtconfTask::VERSION
   spec.authors       = ["Takayuki YAMAGUCHI"]
   spec.email         = ["d@ytak.info"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+  spec.description   = "Tiny rake tasks to manage extconf.rb"
+  spec.summary       = "Tiny rake tasks to create Makefile, to compile, and to remove generated files"
+  spec.homepage      = "https://github.com/ytaka/extconf-task"
+  spec.license       = "GPLv3"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
