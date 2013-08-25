@@ -1,6 +1,6 @@
 # Extconf::Task
 
-TODO: Write a gem description
+Tiny rake tasks to manage extconf.rb.
 
 ## Installation
 
@@ -18,7 +18,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To define tasks to manage extconf.rb, we write in Rakefile
+
+    require "extconf_task"
+    ExtconfTask.new
+
+Then, we can use some tasks, which are displayed by the following command;
+
+    rake -T
 
 ## Contributing
 
