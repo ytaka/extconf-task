@@ -1,4 +1,4 @@
-# Extconf::Task
+# ExtconfTask
 
 Tiny rake tasks to manage extconf.rb.
 
@@ -26,6 +26,17 @@ To define tasks to manage extconf.rb, we write in Rakefile
 Then, we can use some tasks, which are displayed by the following command;
 
     rake -T
+
+## Utility methods
+
+extconf-task includes utility methods to be used in extconf.rb.
+
+The method "find\_header\_in\_gem" provides search direcories of a gem package for a header file.
+The following code is the example of extconf.rb to find "ruby_mpfr.h" from directories of gem "ruby-mpfr".
+
+    require "extconf_task/mkmf_utils"
+    
+    find_header_in_gem("ruby_mpfr.h", "ruby-mpfr")
 
 ## Contributing
 
