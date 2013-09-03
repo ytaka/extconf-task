@@ -1,4 +1,4 @@
-require "rake"
+require "rake/tasklib"
 require "extconf_task/version"
 
 # @note ExtconfTask search files by the pattern "**/extconf.rb"
